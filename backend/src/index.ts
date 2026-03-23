@@ -10,10 +10,17 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// En prod, FRONTEND_URL peut contenir plusieurs origines séparées par des virgules
+// ex: https://d1234abcd.cloudfront.net,https://mondomaine.com
+const allowedOrigins = (process.env.FRONTEND_URL || 'http://localhost:5173').split(',');
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) callback(null, true);
+    else callback(new Error('CORS bloque cette origine : ' + origin));
+  },
   credentials: true,
 }));
+
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
@@ -24,7 +31,7 @@ app.get('/api/health', (_, res) => res.json({ status: 'ok' }));
 async function start() {
   await initDatabase();
   app.listen(PORT, () => {
-    console.log(`🚀 Backend running on http://localhost:${PORT}`);
+    console.log('Backend running on port ' + PORT);
   });
 }
 
