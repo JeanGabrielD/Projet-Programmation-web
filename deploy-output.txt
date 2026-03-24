@@ -1,0 +1,7 @@
+﻿=== SportLog AWS Deployment - 03/24/2026 01:33:03 ===
+Frontend  (CloudFront) : https://d3lorf7datd0rb.cloudfront.net
+Backend   (EB)         : http://sport-tracker-prod.eba-r89wmpep.eu-west-3.elasticbeanstalk.com
+Database  (RDS)        : sport-tracker-db.c3kse8acwsmv.eu-west-3.rds.amazonaws.com
+S3 Bucket              : sport-tracker-frontend-20260324012931
+JWT Secret             : 5b0608e3aefba0f81cc32dbdc3e85056f3551b07a065e470c804e36ee9dc3ea2
+DATABASE_URL           : postgresql://sportadmin:ThisIsAPassword@sport-tracker-db.c3kse8acwsmv.eu-west-3.rds.amazonaws.com:5432/sport_tracker

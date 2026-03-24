@@ -1,0 +1,444 @@
+----------------------------------------
+/var/log/nginx/error.log
+----------------------------------------
+2026/03/24 00:30:36 [error] 12598#12598: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 205.210.31.178, server: , request: "GET / HTTP/1.0", upstream: "http://172.17.0.2:3001/"
+2026/03/24 00:37:06 [error] 14576#14576: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 86.242.39.105, server: , request: "GET /api/health HTTP/1.1", upstream: "http://172.17.0.2:3001/api/health", host: "sport-tracker-prod.eba-r89wmpep.eu-west-3.elasticbeanstalk.com"
+2026/03/24 00:40:28 [error] 14575#14575: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 86.242.39.105, server: , request: "GET /api/health HTTP/1.1", upstream: "http://172.17.0.2:3001/api/health", host: "sport-tracker-prod.eba-r89wmpep.eu-west-3.elasticbeanstalk.com"
+2026/03/24 00:52:50 [error] 14576#14576: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 86.242.39.105, server: , request: "GET /api/health HTTP/1.1", upstream: "http://172.17.0.2:3001/api/health", host: "sport-tracker-prod.eba-r89wmpep.eu-west-3.elasticbeanstalk.com"
+2026/03/24 00:53:03 [error] 14576#14576: *7 connect() failed (111: Connection refused) while connecting to upstream, client: 86.242.39.105, server: , request: "GET /api/health HTTP/1.1", upstream: "http://172.17.0.2:3001/api/health", host: "sport-tracker-prod.eba-r89wmpep.eu-west-3.elasticbeanstalk.com"
+2026/03/24 00:56:06 [error] 14576#14576: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 104.196.29.115, server: , request: "GET /.git/config HTTP/1.1", upstream: "http://172.17.0.2:3001/.git/config", host: "15.188.30.38"
+2026/03/24 01:00:16 [error] 14576#14576: *13 connect() failed (111: Connection refused) while connecting to upstream, client: 86.242.39.105, server: , request: "GET /api/health HTTP/1.1", upstream: "http://172.17.0.2:3001/api/health", host: "sport-tracker-prod.eba-r89wmpep.eu-west-3.elasticbeanstalk.com"
+2026/03/24 01:02:14 [error] 14576#14576: *15 connect() failed (111: Connection refused) while connecting to upstream, client: 159.65.254.60, server: , request: "GET / HTTP/1.1", upstream: "http://172.17.0.2:3001/", host: "15.188.30.38"
+2026/03/24 01:02:14 [error] 14576#14576: *17 connect() failed (111: Connection refused) while connecting to upstream, client: 159.65.254.60, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.17.0.2:3001/favicon.ico", host: "15.188.30.38", referrer: "http://15.188.30.38/"
+
+
+----------------------------------------
+/var/log/docker
+----------------------------------------
+Mar 23 23:59:51 ip-172-31-40-109 docker: time="2026-03-23T23:59:51.115602837Z" level=info msg="Starting up"
+Mar 23 23:59:51 ip-172-31-40-109 docker: time="2026-03-23T23:59:51.331845952Z" level=info msg="Loading containers: start."
+Mar 23 23:59:51 ip-172-31-40-109 docker: time="2026-03-23T23:59:51.637449647Z" level=info msg="Loading containers: done."
+Mar 23 23:59:51 ip-172-31-40-109 docker: time="2026-03-23T23:59:51.670934734Z" level=info msg="Docker daemon" commit=d334795 containerd-snapshotter=false storage-driver=overlay2 version=25.0.14
+Mar 23 23:59:51 ip-172-31-40-109 docker: time="2026-03-23T23:59:51.671045440Z" level=info msg="Daemon has completed initialization"
+Mar 23 23:59:51 ip-172-31-40-109 docker: time="2026-03-23T23:59:51.710911853Z" level=info msg="API listen on /run/docker.sock"
+Mar 24 00:00:17 ip-172-31-40-109 docker: 2026/03/24 00:00:17 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:00:27 ip-172-31-40-109 docker: 2026/03/24 00:00:27 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 00:00:50 ip-172-31-40-109 docker: 2026/03/24 00:00:50 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:00:50 ip-172-31-40-109 docker: 2026/03/24 00:00:50 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:05:07 ip-172-31-40-109 docker: time="2026-03-24T00:05:07.580737739Z" level=info msg="ignoring event" container=4cb316abca109c8c9f75b53b68cb453b288aa83aae75140e698c0baae9b67d1f module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:05:14 ip-172-31-40-109 docker: 2026/03/24 00:05:14 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:05:14 ip-172-31-40-109 docker: 2026/03/24 00:05:14 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:06:11 ip-172-31-40-109 docker: 2026/03/24 00:06:11 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 00:06:13 ip-172-31-40-109 docker: time="2026-03-24T00:06:13.943688973Z" level=info msg="ignoring event" container=2d0067f6ae2988c7efbbb65568ac69c5570e88336e9520d1b3b5f3018e728f3f module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:06:20 ip-172-31-40-109 docker: 2026/03/24 00:06:20 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:06:20 ip-172-31-40-109 docker: 2026/03/24 00:06:20 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:11:28 ip-172-31-40-109 docker: 2026/03/24 00:11:28 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 00:11:30 ip-172-31-40-109 docker: time="2026-03-24T00:11:30.495516022Z" level=info msg="ignoring event" container=81e17954cc0af6809247860fffd1efbdbbaa0c98bb67ca5eb81a5200ad38533e module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:11:37 ip-172-31-40-109 docker: 2026/03/24 00:11:37 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:11:37 ip-172-31-40-109 docker: 2026/03/24 00:11:37 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:12:12 ip-172-31-40-109 docker: 2026/03/24 00:12:12 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 00:12:15 ip-172-31-40-109 docker: time="2026-03-24T00:12:15.115726034Z" level=info msg="ignoring event" container=820fe55565d29f11668904bd5cbf69bec8a15d096e77573fb2640c19ce6e7d4c module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:12:21 ip-172-31-40-109 docker: 2026/03/24 00:12:21 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:12:21 ip-172-31-40-109 docker: 2026/03/24 00:12:21 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:20:55 ip-172-31-40-109 docker: 2026/03/24 00:20:55 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 00:20:57 ip-172-31-40-109 docker: time="2026-03-24T00:20:57.959982249Z" level=info msg="ignoring event" container=fc19cabedc53e8835d219ff14988457310309d709a13ac305803dc52457d9a3b module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:21:05 ip-172-31-40-109 docker: 2026/03/24 00:21:05 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:21:05 ip-172-31-40-109 docker: 2026/03/24 00:21:05 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:21:40 ip-172-31-40-109 docker: 2026/03/24 00:21:40 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 00:21:43 ip-172-31-40-109 docker: time="2026-03-24T00:21:43.266855209Z" level=info msg="ignoring event" container=3fdf1a4e7710c1a6540ad46240b0a4fdf62a9b655da115dd73c7d80b71189598 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:21:50 ip-172-31-40-109 docker: 2026/03/24 00:21:50 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:21:50 ip-172-31-40-109 docker: 2026/03/24 00:21:50 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:25:54 ip-172-31-40-109 docker: time="2026-03-24T00:25:54.024901780Z" level=info msg="ignoring event" container=061e5d29dccff05c0424149e0c40bd25e732b87932aa40c3d9a10576693cad42 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:26:00 ip-172-31-40-109 docker: 2026/03/24 00:26:00 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:26:00 ip-172-31-40-109 docker: 2026/03/24 00:26:00 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:26:36 ip-172-31-40-109 docker: 2026/03/24 00:26:36 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 00:26:39 ip-172-31-40-109 docker: time="2026-03-24T00:26:39.239728139Z" level=info msg="ignoring event" container=67643460bec066b95375bc15aaa6f62370232566939fbdd1c5ee72b1179470d1 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:26:46 ip-172-31-40-109 docker: 2026/03/24 00:26:46 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:26:46 ip-172-31-40-109 docker: 2026/03/24 00:26:46 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:30:18 ip-172-31-40-109 docker: 2026/03/24 00:30:18 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 00:30:20 ip-172-31-40-109 docker: time="2026-03-24T00:30:20.743127919Z" level=info msg="ignoring event" container=827749be021f8b810197e934d49938b5ef59d8def55e569a803d61185c803d32 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:30:27 ip-172-31-40-109 docker: 2026/03/24 00:30:27 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:30:27 ip-172-31-40-109 docker: 2026/03/24 00:30:27 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:31:04 ip-172-31-40-109 docker: 2026/03/24 00:31:04 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 00:31:07 ip-172-31-40-109 docker: time="2026-03-24T00:31:07.132314130Z" level=info msg="ignoring event" container=ceb417870df0cc5e281208d2634edba96dc998efb1e79283d03128a7cfab0a53 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:31:14 ip-172-31-40-109 docker: 2026/03/24 00:31:14 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:31:14 ip-172-31-40-109 docker: 2026/03/24 00:31:14 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:32:34 ip-172-31-40-109 docker: time="2026-03-24T00:32:34.267437991Z" level=info msg="ignoring event" container=c4c8917566ec6fc742479f1ce407a1c654f59c74c46eadabc60834d667d1004b module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 00:32:41 ip-172-31-40-109 docker: 2026/03/24 00:32:41 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:32:41 ip-172-31-40-109 docker: 2026/03/24 00:32:41 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 00:59:45 ip-172-31-40-109 docker: 2026/03/24 00:59:45 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 01:00:32 ip-172-31-40-109 docker: time="2026-03-24T01:00:32.835207459Z" level=warning msg="leaked execError detected and released"
+Mar 24 01:00:32 ip-172-31-40-109 docker: time="2026-03-24T01:00:32.837246511Z" level=warning msg="leaked execError detected and released"
+Mar 24 01:15:46 ip-172-31-40-109 docker: 2026/03/24 01:15:46 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 01:18:05 ip-172-31-40-109 docker: 2026/03/24 01:18:05 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 01:22:00 ip-172-31-40-109 docker: 2026/03/24 01:22:00 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 01:25:03 ip-172-31-40-109 docker: 2026/03/24 01:25:03 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 01:25:11 ip-172-31-40-109 docker: time="2026-03-24T01:25:11.853219571Z" level=info msg="ignoring event" container=dad31c7299277320914c93522b071ca83c7e5fae0f72fbd664d0bfdc72b9e0c3 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 01:25:13 ip-172-31-40-109 docker: time="2026-03-24T01:25:13.100606062Z" level=info msg="ignoring event" container=6116e685099902208d91e4bbc1e0afec023117dd7ce90e524a6c8c7978dba56a module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 01:25:17 ip-172-31-40-109 docker: 2026/03/24 01:25:17 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 01:27:23 ip-172-31-40-109 docker: time="2026-03-24T01:27:23.978034638Z" level=info msg="ignoring event" container=8bb9c96e5cbb8ea6e1af90f0684570219610103c84d47b94e008252cc2dc3262 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 01:27:28 ip-172-31-40-109 docker: 2026/03/24 01:27:28 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 01:28:19 ip-172-31-40-109 docker: 2026/03/24 01:28:19 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 01:28:25 ip-172-31-40-109 docker: time="2026-03-24T01:28:25.893623750Z" level=info msg="ignoring event" container=d7553cc6d780e1bb7cfb3e6f8a59a2aadd12154c837d46f0de1a70768319bc84 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 01:28:30 ip-172-31-40-109 docker: 2026/03/24 01:28:30 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 01:31:08 ip-172-31-40-109 docker: time="2026-03-24T01:31:08.910075875Z" level=info msg="ignoring event" container=d91795cd15a638dcc22b2e8630f01642a37d27cbb66caf245f235ec7de5b1d81 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 01:31:13 ip-172-31-40-109 docker: 2026/03/24 01:31:13 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 01:33:44 ip-172-31-40-109 docker: 2026/03/24 01:33:44 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Mar 24 01:33:46 ip-172-31-40-109 docker: time="2026-03-24T01:33:46.903462213Z" level=info msg="ignoring event" container=2138155f8dc787ea55d4ed8a85dfe809f0569c96c7064c468831c1f7671154fc module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 01:33:51 ip-172-31-40-109 docker: 2026/03/24 01:33:51 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Mar 24 01:36:26 ip-172-31-40-109 docker: time="2026-03-24T01:36:26.357099975Z" level=info msg="ignoring event" container=b00d33095127b182cb950f2464d4cd5a1615de3679f071cc46fff32a3ef8d039 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Mar 24 01:36:31 ip-172-31-40-109 docker: 2026/03/24 01:36:31 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+
+
+----------------------------------------
+/var/log/eb-docker/containers/eb-current-app/unexpected-quit.log
+----------------------------------------
+stdout: , stderr: (node:1) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: self-signed certificate in certificate chain
+    at /app/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async initDatabase (/app/dist/db/database.js:15:20)
+    at async start (/app/dist/index.js:32:5) {
+  code: 'SELF_SIGNED_CERT_IN_CHAIN'
+}
+
+
+----------------------------------------
+/var/log/docker-events.log
+----------------------------------------
+2026-03-24T00:32:41.339816687Z image delete sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T00:59:42.304882523Z container prune  (reclaimed=0)
+2026-03-24T00:59:44.162174007Z image pull node:20-alpine (name=node)
+2026-03-24T00:59:44.928294693Z image pull node:20-alpine (name=node)
+2026-03-24T01:05:13.098341621Z container prune  (reclaimed=0)
+2026-03-24T01:05:13.157499905Z image untag sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:05:13.158662472Z image untag sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:05:13.160649898Z image delete sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:05:15.223211675Z image pull node:20-alpine (name=node)
+2026-03-24T01:05:15.913367478Z image pull node:20-alpine (name=node)
+2026-03-24T01:15:43.750110522Z container prune  (reclaimed=0)
+2026-03-24T01:15:43.813498758Z image untag sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:15:43.816155486Z image untag sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:15:43.819504407Z image delete sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:15:45.986307480Z image pull node:20-alpine (name=node)
+2026-03-24T01:15:46.696020163Z image pull node:20-alpine (name=node)
+2026-03-24T01:18:02.103515528Z container prune  (reclaimed=0)
+2026-03-24T01:18:02.367695541Z image untag sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:18:02.373281557Z image untag sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:18:02.381763153Z image delete sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:18:04.851984769Z image pull node:20-alpine (name=node)
+2026-03-24T01:18:05.568125847Z image pull node:20-alpine (name=node)
+2026-03-24T01:21:56.948819764Z container prune  (reclaimed=0)
+2026-03-24T01:21:57.010355571Z image untag sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:21:57.012764202Z image untag sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:21:57.015905857Z image delete sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:21:59.174801922Z image pull node:20-alpine (name=node)
+2026-03-24T01:21:59.902014738Z image pull node:20-alpine (name=node)
+2026-03-24T01:24:59.649797054Z container prune  (reclaimed=0)
+2026-03-24T01:24:59.708869794Z image untag sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:24:59.710140393Z image untag sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:24:59.712177033Z image delete sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f (name=sha256:6757e50d3b6babac896b5ba3e7acb5219351e6a111bf4dd19974c7b0bd694c1f)
+2026-03-24T01:25:02.058688848Z image pull node:20-alpine (name=node)
+2026-03-24T01:25:02.887341393Z image pull node:20-alpine (name=node)
+2026-03-24T01:25:09.013491638Z image tag sha256:12a34957a2f4bfdbc3851a72b6cf4c01c96b9fc58063afe8a4f4b2c4f4390f1b (name=aws_beanstalk/staging-app)
+2026-03-24T01:25:11.803411719Z container kill dad31c7299277320914c93522b071ca83c7e5fae0f72fbd664d0bfdc72b9e0c3 (image=d2d1b2be0cde, name=practical_williams, signal=15)
+2026-03-24T01:25:11.994366690Z network disconnect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=dad31c7299277320914c93522b071ca83c7e5fae0f72fbd664d0bfdc72b9e0c3, name=bridge, type=bridge)
+2026-03-24T01:25:12.006240798Z container stop dad31c7299277320914c93522b071ca83c7e5fae0f72fbd664d0bfdc72b9e0c3 (image=d2d1b2be0cde, name=practical_williams)
+2026-03-24T01:25:12.014053014Z container die dad31c7299277320914c93522b071ca83c7e5fae0f72fbd664d0bfdc72b9e0c3 (execDuration=3156, exitCode=0, image=d2d1b2be0cde, name=practical_williams)
+2026-03-24T01:25:12.447145278Z container destroy dad31c7299277320914c93522b071ca83c7e5fae0f72fbd664d0bfdc72b9e0c3 (image=d2d1b2be0cde, name=practical_williams)
+2026-03-24T01:25:12.447181032Z container prune  (reclaimed=41327)
+2026-03-24T01:25:12.479426060Z image untag sha256:d2d1b2be0cdef068229a1b6e539028c315bfaed1013057385de66f1d6d9755cc (name=sha256:d2d1b2be0cdef068229a1b6e539028c315bfaed1013057385de66f1d6d9755cc)
+2026-03-24T01:25:12.480566818Z image delete sha256:d2d1b2be0cdef068229a1b6e539028c315bfaed1013057385de66f1d6d9755cc (name=sha256:d2d1b2be0cdef068229a1b6e539028c315bfaed1013057385de66f1d6d9755cc)
+2026-03-24T01:25:12.521283426Z container create 6116e685099902208d91e4bbc1e0afec023117dd7ce90e524a6c8c7978dba56a (image=12a34957a2f4, name=cranky_jackson)
+2026-03-24T01:25:12.568029010Z network connect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=6116e685099902208d91e4bbc1e0afec023117dd7ce90e524a6c8c7978dba56a, name=bridge, type=bridge)
+2026-03-24T01:25:12.800246896Z container start 6116e685099902208d91e4bbc1e0afec023117dd7ce90e524a6c8c7978dba56a (image=12a34957a2f4, name=cranky_jackson)
+2026-03-24T01:25:13.206645455Z network disconnect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=6116e685099902208d91e4bbc1e0afec023117dd7ce90e524a6c8c7978dba56a, name=bridge, type=bridge)
+2026-03-24T01:25:13.215341747Z container die 6116e685099902208d91e4bbc1e0afec023117dd7ce90e524a6c8c7978dba56a (execDuration=0, exitCode=0, image=12a34957a2f4, name=cranky_jackson)
+2026-03-24T01:27:19.245430868Z container destroy 6116e685099902208d91e4bbc1e0afec023117dd7ce90e524a6c8c7978dba56a (image=12a34957a2f4, name=cranky_jackson)
+2026-03-24T01:27:19.245466596Z container prune  (reclaimed=0)
+2026-03-24T01:27:20.278983154Z image pull node:20-alpine (name=node)
+2026-03-24T01:27:20.977533156Z image pull node:20-alpine (name=node)
+2026-03-24T01:27:21.334525614Z image tag sha256:12a34957a2f4bfdbc3851a72b6cf4c01c96b9fc58063afe8a4f4b2c4f4390f1b (name=aws_beanstalk/staging-app)
+2026-03-24T01:27:23.258778304Z container prune  (reclaimed=0)
+2026-03-24T01:27:23.493762339Z container create 8bb9c96e5cbb8ea6e1af90f0684570219610103c84d47b94e008252cc2dc3262 (image=12a34957a2f4, name=kind_wu)
+2026-03-24T01:27:23.526522629Z network connect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=8bb9c96e5cbb8ea6e1af90f0684570219610103c84d47b94e008252cc2dc3262, name=bridge, type=bridge)
+2026-03-24T01:27:23.731158121Z container start 8bb9c96e5cbb8ea6e1af90f0684570219610103c84d47b94e008252cc2dc3262 (image=12a34957a2f4, name=kind_wu)
+2026-03-24T01:27:24.082276082Z network disconnect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=8bb9c96e5cbb8ea6e1af90f0684570219610103c84d47b94e008252cc2dc3262, name=bridge, type=bridge)
+2026-03-24T01:27:24.090682663Z container die 8bb9c96e5cbb8ea6e1af90f0684570219610103c84d47b94e008252cc2dc3262 (execDuration=0, exitCode=0, image=12a34957a2f4, name=kind_wu)
+2026-03-24T01:28:17.253925040Z container destroy 8bb9c96e5cbb8ea6e1af90f0684570219610103c84d47b94e008252cc2dc3262 (image=12a34957a2f4, name=kind_wu)
+2026-03-24T01:28:17.253963787Z container prune  (reclaimed=0)
+2026-03-24T01:28:18.280028274Z image pull node:20-alpine (name=node)
+2026-03-24T01:28:18.981599383Z image pull node:20-alpine (name=node)
+2026-03-24T01:28:23.246081386Z image tag sha256:12a34957a2f4bfdbc3851a72b6cf4c01c96b9fc58063afe8a4f4b2c4f4390f1b (name=aws_beanstalk/staging-app)
+2026-03-24T01:28:25.219418185Z container prune  (reclaimed=0)
+2026-03-24T01:28:25.344661776Z container create d7553cc6d780e1bb7cfb3e6f8a59a2aadd12154c837d46f0de1a70768319bc84 (image=12a34957a2f4, name=romantic_buck)
+2026-03-24T01:28:25.380293690Z network connect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=d7553cc6d780e1bb7cfb3e6f8a59a2aadd12154c837d46f0de1a70768319bc84, name=bridge, type=bridge)
+2026-03-24T01:28:25.623344982Z container start d7553cc6d780e1bb7cfb3e6f8a59a2aadd12154c837d46f0de1a70768319bc84 (image=12a34957a2f4, name=romantic_buck)
+2026-03-24T01:28:26.098356932Z network disconnect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=d7553cc6d780e1bb7cfb3e6f8a59a2aadd12154c837d46f0de1a70768319bc84, name=bridge, type=bridge)
+2026-03-24T01:28:26.107377323Z container die d7553cc6d780e1bb7cfb3e6f8a59a2aadd12154c837d46f0de1a70768319bc84 (execDuration=0, exitCode=0, image=12a34957a2f4, name=romantic_buck)
+2026-03-24T01:31:01.544063310Z container destroy d7553cc6d780e1bb7cfb3e6f8a59a2aadd12154c837d46f0de1a70768319bc84 (image=12a34957a2f4, name=romantic_buck)
+2026-03-24T01:31:01.544103877Z container prune  (reclaimed=0)
+2026-03-24T01:31:02.780141848Z image pull node:20-alpine (name=node)
+2026-03-24T01:31:06.410328142Z image tag sha256:868f5a9a5c88321f60049d70537f9a9546e06c1a577ecc318732321a406f6acc (name=aws_beanstalk/staging-app)
+2026-03-24T01:31:08.287041980Z container prune  (reclaimed=0)
+2026-03-24T01:31:08.416346080Z container create d91795cd15a638dcc22b2e8630f01642a37d27cbb66caf245f235ec7de5b1d81 (image=868f5a9a5c88, name=adoring_jemison)
+2026-03-24T01:31:08.451192144Z network connect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=d91795cd15a638dcc22b2e8630f01642a37d27cbb66caf245f235ec7de5b1d81, name=bridge, type=bridge)
+2026-03-24T01:31:08.656806597Z container start d91795cd15a638dcc22b2e8630f01642a37d27cbb66caf245f235ec7de5b1d81 (image=868f5a9a5c88, name=adoring_jemison)
+2026-03-24T01:31:09.022350078Z network disconnect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=d91795cd15a638dcc22b2e8630f01642a37d27cbb66caf245f235ec7de5b1d81, name=bridge, type=bridge)
+2026-03-24T01:31:09.031466337Z container die d91795cd15a638dcc22b2e8630f01642a37d27cbb66caf245f235ec7de5b1d81 (execDuration=0, exitCode=0, image=868f5a9a5c88, name=adoring_jemison)
+2026-03-24T01:33:43.215560933Z container destroy d91795cd15a638dcc22b2e8630f01642a37d27cbb66caf245f235ec7de5b1d81 (image=868f5a9a5c88, name=adoring_jemison)
+2026-03-24T01:33:43.215596289Z container prune  (reclaimed=0)
+2026-03-24T01:33:44.264563491Z image pull node:20-alpine (name=node)
+2026-03-24T01:33:44.510964980Z image tag sha256:868f5a9a5c88321f60049d70537f9a9546e06c1a577ecc318732321a406f6acc (name=aws_beanstalk/staging-app)
+2026-03-24T01:33:46.134051433Z container prune  (reclaimed=0)
+2026-03-24T01:33:46.348452418Z container create 2138155f8dc787ea55d4ed8a85dfe809f0569c96c7064c468831c1f7671154fc (image=868f5a9a5c88, name=epic_brahmagupta)
+2026-03-24T01:33:46.393597210Z network connect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=2138155f8dc787ea55d4ed8a85dfe809f0569c96c7064c468831c1f7671154fc, name=bridge, type=bridge)
+2026-03-24T01:33:46.587270241Z container start 2138155f8dc787ea55d4ed8a85dfe809f0569c96c7064c468831c1f7671154fc (image=868f5a9a5c88, name=epic_brahmagupta)
+2026-03-24T01:33:47.002373917Z network disconnect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=2138155f8dc787ea55d4ed8a85dfe809f0569c96c7064c468831c1f7671154fc, name=bridge, type=bridge)
+2026-03-24T01:33:47.011705337Z container die 2138155f8dc787ea55d4ed8a85dfe809f0569c96c7064c468831c1f7671154fc (execDuration=0, exitCode=0, image=868f5a9a5c88, name=epic_brahmagupta)
+2026-03-24T01:36:22.710443125Z container destroy 2138155f8dc787ea55d4ed8a85dfe809f0569c96c7064c468831c1f7671154fc (image=868f5a9a5c88, name=epic_brahmagupta)
+2026-03-24T01:36:22.710479925Z container prune  (reclaimed=0)
+2026-03-24T01:36:23.746355257Z image pull node:20-alpine (name=node)
+2026-03-24T01:36:23.991768496Z image tag sha256:868f5a9a5c88321f60049d70537f9a9546e06c1a577ecc318732321a406f6acc (name=aws_beanstalk/staging-app)
+2026-03-24T01:36:25.603417585Z container prune  (reclaimed=0)
+2026-03-24T01:36:25.811756266Z container create b00d33095127b182cb950f2464d4cd5a1615de3679f071cc46fff32a3ef8d039 (image=868f5a9a5c88, name=nifty_sinoussi)
+2026-03-24T01:36:25.847520530Z network connect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=b00d33095127b182cb950f2464d4cd5a1615de3679f071cc46fff32a3ef8d039, name=bridge, type=bridge)
+2026-03-24T01:36:26.047351683Z container start b00d33095127b182cb950f2464d4cd5a1615de3679f071cc46fff32a3ef8d039 (image=868f5a9a5c88, name=nifty_sinoussi)
+2026-03-24T01:36:26.466363519Z network disconnect 8649b774df21223b71856cccc008d7e5faa736b7ff0ecd97621e327fb471b2db (container=b00d33095127b182cb950f2464d4cd5a1615de3679f071cc46fff32a3ef8d039, name=bridge, type=bridge)
+2026-03-24T01:36:26.474927375Z container die b00d33095127b182cb950f2464d4cd5a1615de3679f071cc46fff32a3ef8d039 (execDuration=0, exitCode=0, image=868f5a9a5c88, name=nifty_sinoussi)
+
+
+----------------------------------------
+/var/log/eb-docker-process.log
+----------------------------------------
+2026/03/24 00:06:21.416392 [INFO] Running command: docker wait  81e17954cc0a
+2026/03/24 00:11:30.608978 [INFO] 0
+
+2026/03/24 00:11:37.040902 [INFO] Loading Manifest...
+2026/03/24 00:11:37.063275 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 00:11:37.583243 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 00:11:37.958747 [INFO] Checking if docker is running...
+2026/03/24 00:11:37.958762 [INFO] Fetch current app container id...
+2026/03/24 00:11:37.958793 [INFO] Running command: docker ps | grep 820fe55565d2
+2026/03/24 00:11:37.974189 [INFO] 820fe55565d2   d2d1b2be0cde   "docker-entrypoint.s…"   6 seconds ago   Up 6 seconds   3001/tcp   loving_mendel
+
+2026/03/24 00:11:37.974213 [INFO] Running command: docker wait  820fe55565d2
+2026/03/24 00:12:15.241484 [INFO] 0
+
+2026/03/24 00:12:21.549666 [INFO] Loading Manifest...
+2026/03/24 00:12:21.562453 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 00:12:22.093249 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 00:12:22.446907 [INFO] Checking if docker is running...
+2026/03/24 00:12:22.446922 [INFO] Fetch current app container id...
+2026/03/24 00:12:22.446948 [INFO] Running command: docker ps | grep fc19cabedc53
+2026/03/24 00:12:22.462418 [INFO] fc19cabedc53   d2d1b2be0cde   "docker-entrypoint.s…"   7 seconds ago   Up 6 seconds   3001/tcp   upbeat_colden
+
+2026/03/24 00:12:22.462447 [INFO] Running command: docker wait  fc19cabedc53
+2026/03/24 00:20:58.076630 [INFO] 0
+
+2026/03/24 00:21:04.651167 [INFO] Loading Manifest...
+2026/03/24 00:21:04.657994 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 00:21:05.187507 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 00:21:05.549665 [INFO] Checking if docker is running...
+2026/03/24 00:21:05.549681 [INFO] Fetch current app container id...
+2026/03/24 00:21:05.549703 [INFO] Running command: docker ps | grep 3fdf1a4e7710
+2026/03/24 00:21:05.564949 [INFO] 3fdf1a4e7710   d2d1b2be0cde   "docker-entrypoint.s…"   7 seconds ago   Up 6 seconds   3001/tcp   determined_allen
+
+2026/03/24 00:21:05.564974 [INFO] Running command: docker wait  3fdf1a4e7710
+2026/03/24 00:21:43.389486 [INFO] 0
+
+2026/03/24 00:21:49.664976 [INFO] Loading Manifest...
+2026/03/24 00:21:49.681117 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 00:21:50.183775 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 00:21:50.572091 [INFO] Checking if docker is running...
+2026/03/24 00:21:50.572106 [INFO] Fetch current app container id...
+2026/03/24 00:21:50.572136 [INFO] Running command: docker ps | grep 061e5d29dccf
+2026/03/24 00:21:50.590306 [INFO] 061e5d29dccf   d2d1b2be0cde   "docker-entrypoint.s…"   7 seconds ago   Up 6 seconds   3001/tcp   ecstatic_lederberg
+
+2026/03/24 00:21:50.590331 [INFO] Running command: docker wait  061e5d29dccf
+2026/03/24 00:25:54.157699 [INFO] 0
+
+2026/03/24 00:26:00.526752 [INFO] Loading Manifest...
+2026/03/24 00:26:00.534935 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 00:26:01.069756 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 00:26:01.528779 [INFO] Checking if docker is running...
+2026/03/24 00:26:01.528795 [INFO] Fetch current app container id...
+2026/03/24 00:26:01.528821 [INFO] Running command: docker ps | grep 67643460bec0
+2026/03/24 00:26:01.570787 [INFO] 67643460bec0   d2d1b2be0cde   "docker-entrypoint.s…"   7 seconds ago   Up 6 seconds   3001/tcp   hardcore_ramanujan
+
+2026/03/24 00:26:01.570819 [INFO] Running command: docker wait  67643460bec0
+2026/03/24 00:26:39.368404 [INFO] 0
+
+2026/03/24 00:26:45.962250 [INFO] Loading Manifest...
+2026/03/24 00:26:45.968646 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 00:26:46.511695 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 00:26:46.865728 [INFO] Checking if docker is running...
+2026/03/24 00:26:46.865743 [INFO] Fetch current app container id...
+2026/03/24 00:26:46.865764 [INFO] Running command: docker ps | grep 827749be021f
+2026/03/24 00:26:46.880818 [INFO] 827749be021f   d2d1b2be0cde   "docker-entrypoint.s…"   7 seconds ago   Up 6 seconds   3001/tcp   blissful_wiles
+
+2026/03/24 00:26:46.880851 [INFO] Running command: docker wait  827749be021f
+2026/03/24 00:30:20.860848 [INFO] 0
+
+2026/03/24 00:30:27.337133 [INFO] Loading Manifest...
+2026/03/24 00:30:27.349824 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 00:30:27.866263 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 00:30:28.221336 [INFO] Checking if docker is running...
+2026/03/24 00:30:28.221352 [INFO] Fetch current app container id...
+2026/03/24 00:30:28.221378 [INFO] Running command: docker ps | grep ceb417870df0
+2026/03/24 00:30:28.236326 [INFO] ceb417870df0   d2d1b2be0cde   "docker-entrypoint.s…"   7 seconds ago   Up 6 seconds   3001/tcp   silly_williams
+
+2026/03/24 00:30:28.236349 [INFO] Running command: docker wait  ceb417870df0
+2026/03/24 00:31:07.253880 [INFO] 0
+
+2026/03/24 00:31:13.665264 [INFO] Loading Manifest...
+2026/03/24 00:31:13.672779 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 00:31:14.219339 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 00:31:14.585153 [INFO] Checking if docker is running...
+2026/03/24 00:31:14.585174 [INFO] Fetch current app container id...
+2026/03/24 00:31:14.585210 [INFO] Running command: docker ps | grep c4c8917566ec
+2026/03/24 00:31:14.600650 [INFO] c4c8917566ec   d2d1b2be0cde   "docker-entrypoint.s…"   7 seconds ago   Up 6 seconds   3001/tcp   elated_stonebraker
+
+2026/03/24 00:31:14.600674 [INFO] Running command: docker wait  c4c8917566ec
+2026/03/24 00:32:34.399339 [INFO] 0
+
+2026/03/24 00:32:40.907375 [INFO] Loading Manifest...
+2026/03/24 00:32:40.914134 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 00:32:41.460600 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 00:32:41.826394 [INFO] Checking if docker is running...
+2026/03/24 00:32:41.826409 [INFO] Fetch current app container id...
+2026/03/24 00:32:41.826434 [INFO] Running command: docker ps | grep dad31c729927
+2026/03/24 00:32:41.842523 [INFO] dad31c729927   d2d1b2be0cde   "docker-entrypoint.s…"   7 seconds ago   Up 6 seconds   3001/tcp   practical_williams
+
+2026/03/24 00:32:41.842550 [INFO] Running command: docker wait  dad31c729927
+
+
+----------------------------------------
+/var/log/eb-engine.log
+----------------------------------------
+2026/03/24 01:36:25.461191 [INFO] Running command: systemctl restart rsyslog.service
+2026/03/24 01:36:25.492106 [INFO] Executing instruction: Configure Docker Logging
+2026/03/24 01:36:25.513185 [INFO] Executing instruction: CleanEbExtensions
+2026/03/24 01:36:25.513305 [INFO] Cleaned ebextensions subdirectories from app staging directory.
+2026/03/24 01:36:25.513311 [INFO] Executing instruction: RunConfigDeployPreDeployHooks
+2026/03/24 01:36:25.513317 [INFO] No hooks found in .platform/confighooks/predeploy/, skipping
+2026/03/24 01:36:25.513320 [INFO] Executing instruction: stop X-Ray
+2026/03/24 01:36:25.513322 [INFO] stop X-Ray ...
+2026/03/24 01:36:25.513332 [INFO] Running command: systemctl show -p PartOf xray.service
+2026/03/24 01:36:25.519377 [WARN] stopProcess Warning: process xray is not registered 
+2026/03/24 01:36:25.519403 [INFO] Running command: systemctl stop xray.service
+2026/03/24 01:36:25.527325 [INFO] Executing instruction: Run Docker Container
+2026/03/24 01:36:25.527343 [INFO] stop currently running containers...
+2026/03/24 01:36:25.527356 [INFO] detected old app is not docker compose app
+2026/03/24 01:36:25.527379 [INFO] Running command: iptables-save | grep -v added_by_elasticbeanstalk | iptables-restore
+2026/03/24 01:36:25.532934 [INFO] Running command: systemctl show -p PartOf nginx.service
+2026/03/24 01:36:25.538178 [WARN] deregisterProcess Warning: process nginx is not registered, skipping...
+
+2026/03/24 01:36:25.538202 [INFO] Running command: systemctl show -p PartOf eb-docker.service
+2026/03/24 01:36:25.543075 [WARN] deregisterProcess Warning: process eb-docker is not registered, skipping...
+
+2026/03/24 01:36:25.543099 [INFO] Running command: systemctl show -p PartOf eb-docker-log.service
+2026/03/24 01:36:25.548134 [WARN] deregisterProcess Warning: process eb-docker-log is not registered, skipping...
+
+2026/03/24 01:36:25.548169 [INFO] stopping current container: 2138155f8dc7
+2026/03/24 01:36:25.548178 [INFO] Running command: docker ps | grep -q 2138155f8dc7
+2026/03/24 01:36:25.562561 [INFO] Running command: docker ps | grep -q 2138155f8dc7
+2026/03/24 01:36:25.577383 [INFO] Pruning containers ...
+2026/03/24 01:36:25.577403 [INFO] Running command: docker ps -a
+2026/03/24 01:36:25.590850 [INFO] CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+2026/03/24 01:36:25.590876 [INFO] Running command: docker container prune -f
+2026/03/24 01:36:25.604907 [INFO] Total reclaimed space: 0B
+
+2026/03/24 01:36:25.604930 [INFO] Running command: docker ps -a
+2026/03/24 01:36:25.618361 [INFO] CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+2026/03/24 01:36:25.618399 [INFO] Running command: docker rmi aws_beanstalk/current-app
+2026/03/24 01:36:25.632455 [INFO] Error response from daemon: No such image: aws_beanstalk/current-app:latest
+
+2026/03/24 01:36:25.632475 [INFO] Removing /var/app/current/ if it exists
+2026/03/24 01:36:25.680733 [INFO] Renaming /var/app/staging/ to /var/app/current/
+2026/03/24 01:36:25.680762 [INFO] detected new app is not docker compose app
+2026/03/24 01:36:25.680878 [INFO] Running command: docker run -d --env-file /opt/elasticbeanstalk/deployment/env.list  -v /var/log/eb-docker/containers/eb-current-app:/var/log/app  868f5a9a5c88 
+2026/03/24 01:36:26.053354 [INFO] b00d33095127b182cb950f2464d4cd5a1615de3679f071cc46fff32a3ef8d039
+
+2026/03/24 01:36:31.055563 [INFO] Running command: docker ps | grep -q b00d33095127
+2026/03/24 01:36:31.070209 [ERROR] docker container quit unexpectedly on 2026-03-24 01:36:31.070196581 +0000 UTC: Command docker ps | grep -q b00d33095127 failed with error exit status 1
+2026/03/24 01:36:31.070254 [INFO] Running command: docker logs b00d33095127
+2026/03/24 01:36:31.085988 [ERROR] An error occurred during execution of command [config-deploy] - [Run Docker Container]. Stop running the command. Error: failed to run the docker container b00d33095127: Command docker ps | grep -q b00d33095127 failed with error exit status 1 
+
+2026/03/24 01:36:31.085995 [INFO] Executing cleanup logic
+2026/03/24 01:36:31.086076 [INFO] CommandService Response: {"status":"FAILURE","api_version":"1.0","results":[{"status":"FAILURE","msg":"Engine execution has encountered an error.","returncode":1,"events":[{"msg":"Instance deployment: The Docker container unexpectedly ended after it was started.","timestamp":1774316191070,"severity":"ERROR"},{"msg":"Instance deployment failed. For details, see 'eb-engine.log'.","timestamp":1774316191086,"severity":"ERROR"}]}]}
+
+2026/03/24 01:36:31.115283 [INFO] Platform Engine finished execution on command: config-deploy
+
+2026/03/24 01:38:31.370608 [INFO] Starting...
+2026/03/24 01:38:31.370649 [INFO] Starting EBPlatform-PlatformEngine
+2026/03/24 01:38:31.370676 [INFO] reading event message file
+2026/03/24 01:38:31.371046 [INFO] Engine received EB command cfn-hup-exec
+
+2026/03/24 01:38:31.430727 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 01:38:31.722616 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 01:38:32.017617 [INFO] checking whether command tail-log is applicable to this instance...
+2026/03/24 01:38:32.017629 [INFO] this command is applicable to the instance, thus instance should execute command
+2026/03/24 01:38:32.017633 [INFO] Engine command: (tail-log)
+
+2026/03/24 01:38:32.017687 [INFO] Executing instruction: GetTailLogs
+2026/03/24 01:38:32.017690 [INFO] Tail Logs...
+2026/03/24 01:38:32.018068 [INFO] Running command: tail -n 100 /var/log/eb-docker/containers/eb-current-app/unexpected-quit.log
+2026/03/24 01:38:32.019957 [INFO] Running command: tail -n 100 /var/log/docker-events.log
+2026/03/24 01:38:32.021586 [INFO] Running command: tail -n 100 /var/log/eb-docker-process.log
+2026/03/24 01:38:32.023057 [INFO] Running command: tail -n 100 /var/log/eb-engine.log
+2026/03/24 01:38:32.024501 [INFO] Running command: tail -n 100 /var/log/nginx/access.log
+2026/03/24 01:38:32.025973 [INFO] Running command: tail -n 100 /var/log/nginx/error.log
+2026/03/24 01:38:32.027360 [INFO] Running command: tail -n 100 /var/log/docker
+2026/03/24 01:38:32.113679 [INFO] Executing cleanup logic
+2026/03/24 01:38:32.113765 [INFO] CommandService Response: {"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"Engine execution has succeeded.","returncode":0,"events":[{"msg":"Instance deployment completed successfully.","timestamp":1774316312113,"severity":"INFO"}]}]}
+
+2026/03/24 01:38:32.113785 [INFO] Platform Engine finished execution on command: tail-log
+
+2026/03/24 01:39:37.778471 [INFO] Starting...
+2026/03/24 01:39:37.778509 [INFO] Starting EBPlatform-PlatformEngine
+2026/03/24 01:39:37.778536 [INFO] reading event message file
+2026/03/24 01:39:37.778918 [INFO] Engine received EB command cfn-hup-exec
+
+2026/03/24 01:39:37.849381 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBAutoScalingGroup --region eu-west-3
+2026/03/24 01:39:38.150441 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-west-3:720936371632:stack/awseb-e-imh22tycyq-stack/35492010-2714-11f1-b688-069df149e195 -r AWSEBBeanstalkMetadata --region eu-west-3
+2026/03/24 01:39:38.439829 [INFO] checking whether command tail-log is applicable to this instance...
+2026/03/24 01:39:38.439840 [INFO] this command is applicable to the instance, thus instance should execute command
+2026/03/24 01:39:38.439844 [INFO] Engine command: (tail-log)
+
+2026/03/24 01:39:38.439912 [INFO] Executing instruction: GetTailLogs
+2026/03/24 01:39:38.439917 [INFO] Tail Logs...
+2026/03/24 01:39:38.440311 [INFO] Running command: tail -n 100 /var/log/nginx/error.log
+2026/03/24 01:39:38.442170 [INFO] Running command: tail -n 100 /var/log/docker
+2026/03/24 01:39:38.443737 [INFO] Running command: tail -n 100 /var/log/eb-docker/containers/eb-current-app/unexpected-quit.log
+2026/03/24 01:39:38.445217 [INFO] Running command: tail -n 100 /var/log/docker-events.log
+2026/03/24 01:39:38.446576 [INFO] Running command: tail -n 100 /var/log/eb-docker-process.log
+2026/03/24 01:39:38.448162 [INFO] Running command: tail -n 100 /var/log/eb-engine.log
+
+
+----------------------------------------
+/var/log/nginx/access.log
+----------------------------------------
+147.185.132.21 - - [24/Mar/2026:00:10:31 +0000] "\x16\x03\x01\x00\xCA\x01\x00\x00\xC6\x03\x03s\xA7\xDC\xE0\xA8\xE8\x01\xFB\x85\x12\x03\xB9\x1F\x1A\x82&r{\x93\xE0\xE4@\xC1W\x14.1\x22@\xDFs\xA3\x00\x00h\xCC\x14\xCC\x13\xC0/\xC0+\xC00\xC0,\xC0\x11\xC0\x07\xC0'\xC0#\xC0\x13\xC0\x09\xC0(\xC0$\xC0\x14\xC0" 400 157 "-" "-" "-"
+147.185.132.21 - - [24/Mar/2026:00:10:31 +0000] "\x16\x03\x01\x00\xEE\x01\x00\x00\xEA\x03\x03\xF2\xCD\x06\xA5*'\x07/\xA7\xD1\xF4\x01\x95G\xBE\xF6\xEB,9\xEA\x99\x09p\xA3\xA2Pd\xB6,]Xx \xE0\xBD\xF3\x88y\xB0%S\xC5\xC0\xF6\x1D\x13dP\x19\xB9\x9F\x05\x18pI\x13\x94h\x07 \xF8\xFA\xDBR\x01\x00&\xC0+\xC0/\xC0,\xC00\xCC\xA9\xCC\xA8\xC0\x09\xC0\x13\xC0" 400 157 "-" "-" "-"
+205.210.31.178 - - [24/Mar/2026:00:30:36 +0000] "GET / HTTP/1.0" 502 157 "-" "Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity" "-"
+86.242.39.105 - - [24/Mar/2026:00:37:06 +0000] "GET /api/health HTTP/1.1" 502 157 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-GB) WindowsPowerShell/5.1.26100.7705" "-"
+86.242.39.105 - - [24/Mar/2026:00:40:28 +0000] "GET /api/health HTTP/1.1" 502 157 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-GB) WindowsPowerShell/5.1.26100.7705" "-"
+86.242.39.105 - - [24/Mar/2026:00:52:50 +0000] "GET /api/health HTTP/1.1" 502 157 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-GB) WindowsPowerShell/5.1.26100.7705" "-"
+86.242.39.105 - - [24/Mar/2026:00:53:03 +0000] "GET /api/health HTTP/1.1" 502 157 "-" "curl/8.16.0" "-"
+104.196.29.115 - - [24/Mar/2026:00:56:06 +0000] "GET /.git/config HTTP/1.1" 502 157 "-" "Mozilla/5.0" "-"
+86.242.39.105 - - [24/Mar/2026:01:00:16 +0000] "GET /api/health HTTP/1.1" 502 157 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-GB) WindowsPowerShell/5.1.26100.7705" "-"
+159.65.254.60 - - [24/Mar/2026:01:02:14 +0000] "GET / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" "-"
+159.65.254.60 - - [24/Mar/2026:01:02:14 +0000] "GET /favicon.ico HTTP/1.1" 502 559 "http://15.188.30.38/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" "-"
+
+

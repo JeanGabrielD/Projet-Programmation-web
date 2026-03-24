@@ -167,7 +167,7 @@ function chartOptions(yLabel: string) {
         titleColor: '#e8e8f0',
         bodyColor: '#6b6b80',
         padding: 12,
-        titleFont: { family: 'DM Sans', weight: '600' as const },
+        titleFont: { family: 'DM Sans', weight: 600 },
         bodyFont: { family: 'DM Sans' },
       },
     },
